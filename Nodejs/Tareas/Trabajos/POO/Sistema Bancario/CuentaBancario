@@ -1,0 +1,18 @@
+class CuentaBancaria {
+    constructor(numeroCuenta,saldo){
+        this.numeroCuenta = numeroCuenta;
+        this.saldo = saldo;
+    }
+
+    depositar (monto) {
+        this.saldo += monto;
+
+    }
+
+    retirar (monto) {
+        if (monto <= this.saldo) {
+            this.saldo += monto;
+            return true;
+    }
+    return false;
+    }}
