@@ -7,4 +7,4 @@ const clientesRoutes = require("./routes/ClientesRoutes");
 
 app.use('/api', clientesRoutes);
 
-app.listen(PORT, () => console.log(`Escuchando el servidor en el puerto: http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Escuchando el servidor en el puerto: http://localhost:${PORT}`)); // eslint-disable-line no-console
